@@ -27,3 +27,13 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[http]
+	sslCAInfo = /usr/lib/ssl/certs/ca-certificates.crt
+[user]
+	email = w@qrk.us
+	name = Ken Bingham
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
